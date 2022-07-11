@@ -5,4 +5,4 @@ ADD ./node_modules.tar.gz .
 COPY . /front-end
 
 EXPOSE 3000
-ENTRYPOINT ['npm', 'start']
+ENTRYPOINT ["npm", "start"]
