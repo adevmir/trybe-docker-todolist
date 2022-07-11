@@ -1,9 +1,9 @@
 FROM node:14-alpine
 
-WORKDIR /app
+WORKDIR /back-end
 
 ADD ./node_modules.tar.gz .
-COPY . .
+COPY . /back-end/
 
 EXPOSE 3001
 ENTRYPOINT [ 'npm', 'start' ]
